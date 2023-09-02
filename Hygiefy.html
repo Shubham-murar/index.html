@@ -9,10 +9,9 @@
         .webchat-container {
             width: 400px;
             height: 600px;
-            background-color: #f0f0f0;
-            border: 2px solid #ccc;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: transparent; /* Set background color to transparent */
+            border: none; /* Remove border */
+            border-radius: 0; /* Remove border radius */
             overflow: hidden;
         }
 
@@ -25,15 +24,9 @@
             margin: 10px;
         }
 
-        /* Styling for the chat button */
+        /* Remove styling for the chat button */
         .webchat-button {
-            border: none;
-            padding: 10px;
-            background-color: #007bff;
-            color: white;
-            border-radius: 5px;
-            margin: 10px;
-            cursor: pointer;
+            display: none; /* This hides the button */
         }
 
         /* Styling for chat messages */
@@ -47,7 +40,6 @@
     </style>
 </head>
 <body>
-    <h1>Hygiefy Chatbot</h1>
     <div id="webchat-container" class="webchat-container">
         <!-- Webchat will be loaded here -->
     </div>
