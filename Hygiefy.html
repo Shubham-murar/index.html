@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hygiefy Chatbot</title>
+    <style>
+        /* Custom CSS styles for the webchat */
+        .webchat-container {
+            width: 400px;
+            height: 600px;
+            background-color: #f0f0f0;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        /* Styling for the chat input */
+        .webchat-input {
+            border: none;
+            padding: 10px;
+            width: 80%;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        /* Styling for the chat button */
+        .webchat-button {
+            border: none;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        /* Styling for chat messages */
+        .webchat-message {
+            background-color: #007bff;
+            color: white;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hygiefy Chatbot</h1>
+    <div id="webchat-container" class="webchat-container">
+        <!-- Webchat will be loaded here -->
+    </div>
+
+    <!-- Your preconfigured webchat script -->
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/9636fc0b-9bff-4036-9596-e84d7c5215dc/webchat/config.js" defer></script>
+
+    <script>
+        // Initialize the webchat
+        Webchat.default.init({
+            container: document.getElementById('webchat-container'),
+        });
+    </script>
+</body>
+</html>
